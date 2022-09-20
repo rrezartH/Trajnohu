@@ -1,0 +1,6 @@
+framework module Pods_Trajnohu {
+  umbrella header "Pods-Trajnohu-umbrella.h"
+
+  export *
+  module * { export * }
+}

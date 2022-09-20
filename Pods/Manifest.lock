@@ -1,0 +1,50 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - IBAnimatable (6.1.0)
+  - Kingfisher (7.3.2)
+  - lottie-ios (3.4.3)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - SwiftAlgorithms (1.0.0)
+  - SwiftLint (0.49.1)
+
+DEPENDENCIES:
+  - Charts
+  - IBAnimatable
+  - Kingfisher
+  - lottie-ios
+  - NVActivityIndicatorView
+  - SDWebImage
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - IBAnimatable
+    - Kingfisher
+    - lottie-ios
+    - NVActivityIndicatorView
+    - SDWebImage
+    - SwiftAlgorithms
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  lottie-ios: 9ae750cdc7820fecbd3c2f0cfc493038208fcdc4
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+
+PODFILE CHECKSUM: 6ada4ae415de61cc93f2331d9ccced9d0e3fde46
+
+COCOAPODS: 1.11.3
