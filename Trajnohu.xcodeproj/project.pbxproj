@@ -13,6 +13,8 @@
 		594BDCE128DA4553005B6408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594BDCDF28DA4553005B6408 /* Main.storyboard */; };
 		594BDCE628DA4554005B6408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594BDCE428DA4554005B6408 /* LaunchScreen.storyboard */; };
 		594BDCF128DA596F005B6408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594BDCF028DA596F005B6408 /* Assets.xcassets */; };
+		595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3428DB37A0006E16C4 /* LoginVC.swift */; };
+		595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3628DB3C13006E16C4 /* RegisterVC.swift */; };
 		9FFEA273276E2C1D50197D10 /* Pods_Trajnohu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F50BB5C2B13DCDB3384F85 /* Pods_Trajnohu.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		594BDCE528DA4554005B6408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594BDCE728DA4554005B6408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594BDCF028DA596F005B6408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		595A7C3428DB37A0006E16C4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		595A7C3628DB3C13006E16C4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		60AA06759ED8A099D9D3D3C3 /* Pods-Trajnohu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trajnohu.debug.xcconfig"; path = "Target Support Files/Pods-Trajnohu/Pods-Trajnohu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				594BDCDD28DA4553005B6408 /* ViewController.swift */,
+				595A7C3428DB37A0006E16C4 /* LoginVC.swift */,
+				595A7C3628DB3C13006E16C4 /* RegisterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,7 +110,6 @@
 				60AA06759ED8A099D9D3D3C3 /* Pods-Trajnohu.debug.xcconfig */,
 				54AC37FEA8AD18E7E277A5BF /* Pods-Trajnohu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -233,7 +238,9 @@
 			files = (
 				594BDCDE28DA4553005B6408 /* ViewController.swift in Sources */,
 				594BDCDA28DA4553005B6408 /* AppDelegate.swift in Sources */,
+				595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */,
 				594BDCDC28DA4553005B6408 /* SceneDelegate.swift in Sources */,
+				595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
