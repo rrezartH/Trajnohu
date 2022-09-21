@@ -14,11 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var userAccessView: AnimatableView!
     
     var hasAccount: Bool = true
+    var hasStartedOnce: Bool = false
     let defaultAnimationDuration: CGFloat = 0.5
     
     override func viewDidLoad() {
         super.viewDidLoad()
         instantiateVCs(vC: LoginVC.self, "LoginVC")
+        hasStartedOnce = true
     }
     
     @IBAction func swapLoginRegisterBtnPressed(_ sender: Any) {
@@ -29,20 +31,11 @@ class ViewController: UIViewController {
         let previousView = userAccessView.subviews.last
         
         if hasAccount {
-            UIView.animate(withDuration: defaultAnimationDuration) {
-                previousView?.frame = CGRect(x: 0, y: self.userAccessView.frame.height, width: self.userAccessView.frame.width, height: self.userAccessView.frame.height)
-            } completion: { _ in
-                previousView?.removeFromSuperview()
-            }
+            animateView(viewController: previousView!, y: self.userAccessView.frame.height, true)
             self.instantiateVCs(vC: RegisterVC.self, "RegisterVC")
             self.swapLoginRegisterBtn.setTitle("Keni llogari?", for: .normal)
-            
         } else {
-            UIView.animate(withDuration: defaultAnimationDuration) {
-                previousView?.frame = CGRect(x: 0, y: self.userAccessView.frame.height, width: self.userAccessView.frame.width, height: self.userAccessView.frame.height)
-            } completion: { _ in
-                previousView?.removeFromSuperview()
-            }
+            animateView(viewController: previousView!, y: self.userAccessView.frame.height, true)
             self.instantiateVCs(vC: LoginVC.self, "LoginVC")
             self.swapLoginRegisterBtn.setTitle("Nuk keni llogari?", for: .normal)
         }
@@ -59,11 +52,19 @@ class ViewController: UIViewController {
         self.addChild(viewController)
         viewController.view.frame = CGRect(x: 0, y: -userAccessView.frame.height, width: userAccessView.frame.width, height: userAccessView.frame.height)
         self.userAccessView.addSubview(viewController.view)
-        
-        UIView.animate(withDuration: defaultAnimationDuration) {
-            viewController.view.frame = CGRect(x: 0, y: 0, width: self.userAccessView.frame.width, height: self.userAccessView.frame.height)
-        }
+        animateView(viewController: viewController.view, y: 0, false)
         viewController.didMove(toParent: self)
+    }
+    
+    func animateView(viewController: UIView, y: CGFloat, _ removeView: Bool) {
+        UIView.animate(withDuration: hasStartedOnce ? defaultAnimationDuration : 0) {
+            viewController.frame = CGRect(x: 0, y: y, width: self.userAccessView.frame.width, height: self.userAccessView.frame.height)
+        } completion: { _ in
+            if removeView {
+                viewController.removeFromSuperview()
+            }
+        }
+
     }
 }
 

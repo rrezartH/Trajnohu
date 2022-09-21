@@ -10,6 +10,7 @@ import IBAnimatable
 
 class RegisterVC: UIViewController, UITextFieldDelegate {
 
+    //childVC Outlets
     @IBOutlet weak var usernameTxtField: AnimatableTextField!
     @IBOutlet weak var emailTxtField: AnimatableTextField!
     @IBOutlet weak var passwordTxtField: AnimatableTextField!
@@ -19,6 +20,11 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         setupTextField()
     }
     
+    
+}
+
+//this extension setups the controller as a child view in the starter page
+extension RegisterVC {
     func setupTextField() {
         usernameTxtField.delegate = self
         emailTxtField.delegate = self
@@ -44,5 +50,4 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
             passwordTxtField.borderWidth = 0
         }
     }
-
 }
