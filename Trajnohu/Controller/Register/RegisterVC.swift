@@ -20,15 +20,24 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         setupTextField()
     }
     
+    @IBAction func registerButton(_ sender: Any) {
+            
+    }
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? RegisterVC {
+//            
+//        }
+    }
     
 }
 
 //this extension setups the controller as a child view in the starter page
 extension RegisterVC {
     func setupTextField() {
-        usernameTxtField.delegate = self
-        emailTxtField.delegate = self
-        passwordTxtField.delegate = self
+        usernameTxtField?.delegate = self
+        emailTxtField?.delegate = self
+        passwordTxtField?.delegate = self
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

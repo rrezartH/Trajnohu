@@ -15,6 +15,11 @@
 		594BDCF128DA596F005B6408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594BDCF028DA596F005B6408 /* Assets.xcassets */; };
 		595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3428DB37A0006E16C4 /* LoginVC.swift */; };
 		595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3628DB3C13006E16C4 /* RegisterVC.swift */; };
+		59B2FE5628E4FC03003485C4 /* FitnessPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */; };
+		59B2FE5828E4FCD3003485C4 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2FE5728E4FCD3003485C4 /* Exercise.swift */; };
+		59E693B728E4B10A008F2D87 /* FitnessPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E693B528E4B10A008F2D87 /* FitnessPlanCell.swift */; };
+		59E693B828E4B10A008F2D87 /* FitnessPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */; };
+		59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */; };
 		9FFEA273276E2C1D50197D10 /* Pods_Trajnohu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F50BB5C2B13DCDB3384F85 /* Pods_Trajnohu.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +36,11 @@
 		594BDCF028DA596F005B6408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		595A7C3428DB37A0006E16C4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		595A7C3628DB3C13006E16C4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlan.swift; sourceTree = "<group>"; };
+		59B2FE5728E4FCD3003485C4 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		59E693B528E4B10A008F2D87 /* FitnessPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlanCell.swift; sourceTree = "<group>"; };
+		59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessPlanCell.xib; sourceTree = "<group>"; };
+		59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessExercisesVC.swift; sourceTree = "<group>"; };
 		60AA06759ED8A099D9D3D3C3 /* Pods-Trajnohu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trajnohu.debug.xcconfig"; path = "Target Support Files/Pods-Trajnohu/Pods-Trajnohu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +92,10 @@
 		594BDCED28DA4705005B6408 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				59E693B928E4B116008F2D87 /* FitnessTraining */,
+				596E141828DCD3A100E75D76 /* Register */,
 				594BDCDD28DA4553005B6408 /* ViewController.swift */,
 				595A7C3428DB37A0006E16C4 /* LoginVC.swift */,
-				595A7C3628DB3C13006E16C4 /* RegisterVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		594BDCEE28DA470C005B6408 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59E693B428E4B0D5008F2D87 /* FitnessPlansCell */,
 				594BDCDF28DA4553005B6408 /* Main.storyboard */,
 			);
 			path = View;
@@ -100,8 +112,35 @@
 		594BDCEF28DA4712005B6408 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */,
+				59B2FE5728E4FCD3003485C4 /* Exercise.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		596E141828DCD3A100E75D76 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				595A7C3628DB3C13006E16C4 /* RegisterVC.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		59E693B428E4B0D5008F2D87 /* FitnessPlansCell */ = {
+			isa = PBXGroup;
+			children = (
+				59E693B528E4B10A008F2D87 /* FitnessPlanCell.swift */,
+				59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */,
+			);
+			path = FitnessPlansCell;
+			sourceTree = "<group>";
+		};
+		59E693B928E4B116008F2D87 /* FitnessTraining */ = {
+			isa = PBXGroup;
+			children = (
+				59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */,
+			);
+			path = FitnessTraining;
 			sourceTree = "<group>";
 		};
 		D0B3AEF897FA8D7C891AEC3E /* Pods */ = {
@@ -184,6 +223,7 @@
 				594BDCE628DA4554005B6408 /* LaunchScreen.storyboard in Resources */,
 				594BDCF128DA596F005B6408 /* Assets.xcassets in Resources */,
 				594BDCE128DA4553005B6408 /* Main.storyboard in Resources */,
+				59E693B828E4B10A008F2D87 /* FitnessPlanCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +277,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				594BDCDE28DA4553005B6408 /* ViewController.swift in Sources */,
+				59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */,
 				594BDCDA28DA4553005B6408 /* AppDelegate.swift in Sources */,
+				59B2FE5628E4FC03003485C4 /* FitnessPlan.swift in Sources */,
 				595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */,
+				59E693B728E4B10A008F2D87 /* FitnessPlanCell.swift in Sources */,
 				594BDCDC28DA4553005B6408 /* SceneDelegate.swift in Sources */,
 				595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */,
+				59B2FE5828E4FCD3003485C4 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zCk-vm-b08">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trajnohu-LOGO-1024x1024px-White" translatesAutoresizingMaskIntoConstraints="NO" id="4yq-v2-ERx">
-                                <rect key="frame" x="155" y="87" width="80" height="80"/>
+                                <rect key="frame" x="155" y="131" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4yq-v2-ERx" secondAttribute="height" multiplier="1:1" id="N8J-aQ-hnw"/>
                                     <constraint firstAttribute="height" constant="80" id="ZwO-PD-RBY"/>
@@ -26,13 +26,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAJNOHU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hko-b6-udH">
-                                <rect key="frame" x="16" y="172" width="358" height="22"/>
+                                <rect key="frame" x="16" y="216" width="358" height="22"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPZ-xL-3yu" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="224" width="358" height="350"/>
+                                <rect key="frame" x="16" y="268" width="358" height="350"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="vgP-fQ-SBX"/>
@@ -47,7 +47,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-jR-Ror" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="584" width="358" height="35"/>
+                                <rect key="frame" x="16" y="628" width="358" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Nuk keni llogari?">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,6 +81,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oj-jR-Ror" secondAttribute="trailing" constant="16" id="zaM-rC-2x5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hBb-9x-zO9"/>
                     <connections>
                         <outlet property="passwordTxtField" destination="Zw2-1X-32H" id="8PC-v0-MyZ"/>
                         <outlet property="swapLoginRegisterBtn" destination="8oj-jR-Ror" id="8zO-83-BNS"/>
@@ -90,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="63" y="35"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Lgn-m1-wrw">
@@ -288,12 +289,346 @@
             </objects>
             <point key="canvasLocation" x="369" y="-648"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Hm4-9F-GzU">
+            <objects>
+                <viewController id="Xnq-Eq-2A0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJo-9n-B5s">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-Cl-vze">
+                                <rect key="frame" x="16" y="263.66666666666669" width="358" height="317.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Mb1-TN-Uvk">
+                                        <rect key="frame" x="16" y="0.0" width="326" height="150.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNP-Iv-rT9" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.33333333333334"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Trajnime ne Fitnes" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.18823529410000001" green="0.45882352939999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.20000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="1" y="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="TSs-K9-Uge" kind="show" id="UNd-q6-cgA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaE-D8-oOe" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.33333333333334"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="IaE-D8-oOe" secondAttribute="height" multiplier="1:1" id="n4y-vd-m3O"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Trajnime ne Shtepi" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.18823529410000001" green="0.45882352939999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.20000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="1" y="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="8bp-Om-5DL" kind="show" id="56X-Wm-lF4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zRo-ts-jb9">
+                                        <rect key="frame" x="16" y="166.33333333333331" width="326" height="150.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61r-3f-8yW" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.66666666666666"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Dua te vrapoj" titleAlignment="center">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.18823529410000001" green="0.45882352939999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.20000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="1" y="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="n7y-K3-dg5" kind="show" id="V0h-sB-TjI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gje-2H-N0I" customClass="AnimatableButton" customModule="IBAnimatable">
+                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Gje-2H-N0I" secondAttribute="height" id="QIa-at-eF6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
+                                                    <string key="title">Plane ushqimore dhe 
+Gjurmim i kalorive</string>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="0.18823529410000001" green="0.45882352939999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.20000000000000001"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <point key="value" x="1" y="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Eu4-LD-O5e" kind="show" id="VpQ-dR-gDn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mb1-TN-Uvk" secondAttribute="trailing" constant="16" id="4m9-TB-pWK"/>
+                                    <constraint firstItem="Mb1-TN-Uvk" firstAttribute="leading" secondItem="4Mx-Cl-vze" secondAttribute="leading" constant="16" id="Sv9-Hw-bPH"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ne cfare menyre deshiron ta permiresosh kualitetin e shendetit tend?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-ct-l8W">
+                                <rect key="frame" x="30" y="177.66666666666666" width="330" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trajnohu-LOGO-1024x1024px-Green" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-DX-8eE">
+                                <rect key="frame" x="110" y="717" width="170" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="YcM-HE-IBZ"/>
+                                    <constraint firstAttribute="width" constant="170" id="ume-eb-m3O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pershendetje Alban!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-sS-fT4">
+                                <rect key="frame" x="16" y="137.66666666666666" width="358" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jm5-b7-qh2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Mx-Cl-vze" firstAttribute="top" secondItem="D6t-ct-l8W" secondAttribute="bottom" constant="50" id="0YV-kv-P3A"/>
+                            <constraint firstItem="jm5-b7-qh2" firstAttribute="trailing" secondItem="Uj1-sS-fT4" secondAttribute="trailing" constant="16" id="6LU-c3-95s"/>
+                            <constraint firstItem="4Mx-Cl-vze" firstAttribute="centerX" secondItem="DJo-9n-B5s" secondAttribute="centerX" id="8dX-eH-khh"/>
+                            <constraint firstAttribute="trailing" secondItem="D6t-ct-l8W" secondAttribute="trailing" constant="30" id="KIy-9y-bCe"/>
+                            <constraint firstItem="D6t-ct-l8W" firstAttribute="top" secondItem="Uj1-sS-fT4" secondAttribute="bottom" constant="16" id="KPC-lo-gwR"/>
+                            <constraint firstItem="D6t-ct-l8W" firstAttribute="leading" secondItem="jm5-b7-qh2" secondAttribute="leading" constant="30" id="M9X-ZV-0Qh"/>
+                            <constraint firstItem="RNB-DX-8eE" firstAttribute="centerX" secondItem="DJo-9n-B5s" secondAttribute="centerX" id="Ywn-FE-qGg"/>
+                            <constraint firstItem="4Mx-Cl-vze" firstAttribute="leading" secondItem="jm5-b7-qh2" secondAttribute="leading" constant="16" id="fnd-4f-02a"/>
+                            <constraint firstItem="jm5-b7-qh2" firstAttribute="trailing" secondItem="4Mx-Cl-vze" secondAttribute="trailing" constant="16" id="ilE-FH-3Yu"/>
+                            <constraint firstItem="Uj1-sS-fT4" firstAttribute="leading" secondItem="jm5-b7-qh2" secondAttribute="leading" constant="16" id="mAX-9E-JoL"/>
+                            <constraint firstAttribute="bottom" secondItem="RNB-DX-8eE" secondAttribute="bottom" constant="-41" id="nLz-9W-lC1"/>
+                            <constraint firstItem="4Mx-Cl-vze" firstAttribute="centerY" secondItem="DJo-9n-B5s" secondAttribute="centerY" id="pd7-ez-CwG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u5M-2p-GWo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agT-k5-fdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="-656.16113744075824"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B72-LX-gQv">
+            <objects>
+                <viewController id="8bp-Om-5DL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="keu-Ez-G3g">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L1n-pY-e9Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="54V-sm-wSF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmW-Gg-hlq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3360" y="-644"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mtn-ez-xJ2">
+            <objects>
+                <viewController id="n7y-K3-dg5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OhL-g3-hmP">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3Cx-58-CXb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XfP-np-Z2s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCs-zq-7CL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="80"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tnA-kX-WAL">
+            <objects>
+                <viewController id="Eu4-LD-O5e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wl6-WW-u8e">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Svf-in-TQ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4TK-qs-0y8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYW-UI-xfs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3390" y="71"/>
+        </scene>
+        <!--Fitness ExercisesVC-->
+        <scene sceneID="DKy-Gh-IWY">
+            <objects>
+                <viewController id="TSs-K9-Uge" customClass="FitnessExercisesVC" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZgL-C9-yeh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-pl-CIE">
+                                <rect key="frame" x="16" y="101" width="358" height="45.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krijo nje plan trajnimi." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXx-29-IaY">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nje budalla me plan e mund te menqurin pa plan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xR6-EC-4n6">
+                                        <rect key="frame" x="0.0" y="25.333333333333329" width="358" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-26-dzd">
+                                <rect key="frame" x="16" y="243.66666666666669" width="358" height="570.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-X6-45j">
+                                <rect key="frame" x="16" y="176.66666666666666" width="182.66666666666666" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-dl-9Ci" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="J5f-dl-9Ci" secondAttribute="height" id="qrx-Hd-tut"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shto plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKs-R0-XHf">
+                                        <rect key="frame" x="77" y="9.3333333333333446" width="105.66666666666669" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qXI-Fd-xba"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TVa-26-dzd" secondAttribute="bottom" constant="30" id="7qc-Ag-bwY"/>
+                            <constraint firstItem="qXI-Fd-xba" firstAttribute="trailing" secondItem="X5R-pl-CIE" secondAttribute="trailing" constant="16" id="GY8-27-Zdc"/>
+                            <constraint firstItem="TVa-26-dzd" firstAttribute="leading" secondItem="qXI-Fd-xba" secondAttribute="leading" constant="16" id="V2k-oy-VSJ"/>
+                            <constraint firstItem="X5R-pl-CIE" firstAttribute="top" secondItem="qXI-Fd-xba" secondAttribute="top" constant="10" id="bhU-8B-O3F"/>
+                            <constraint firstItem="1Ar-X6-45j" firstAttribute="top" secondItem="X5R-pl-CIE" secondAttribute="bottom" constant="30" id="egx-6A-BJQ"/>
+                            <constraint firstItem="qXI-Fd-xba" firstAttribute="trailing" secondItem="TVa-26-dzd" secondAttribute="trailing" constant="16" id="fIa-Je-q49"/>
+                            <constraint firstItem="1Ar-X6-45j" firstAttribute="leading" secondItem="qXI-Fd-xba" secondAttribute="leading" constant="16" id="gKz-Fh-aW0"/>
+                            <constraint firstItem="X5R-pl-CIE" firstAttribute="leading" secondItem="qXI-Fd-xba" secondAttribute="leading" constant="16" id="iFo-GI-tk3"/>
+                            <constraint firstItem="TVa-26-dzd" firstAttribute="top" secondItem="1Ar-X6-45j" secondAttribute="bottom" constant="20" id="nsJ-LH-Zd0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qZF-di-gbd"/>
+                    <connections>
+                        <outlet property="fitnessPlansTV" destination="TVa-26-dzd" id="1Uv-cm-rZs"/>
+                        <outlet property="noPlanSW" destination="X5R-pl-CIE" id="FuF-Zw-xPj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dq-vR-sgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="-1371.3270142180095"/>
+        </scene>
         <!--RegisterVC-->
         <scene sceneID="5Gx-tx-h7j">
             <objects>
-                <viewController id="reb-di-8tw" customClass="RegisterVC" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsController" id="reb-di-8tw" customClass="RegisterVC" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hR3-4G-dh2">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hajde t'njihemi pak.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-PP-OLq">
@@ -311,6 +646,7 @@
                             <constraint firstItem="qId-4d-m05" firstAttribute="trailing" secondItem="8FH-PP-OLq" secondAttribute="trailing" constant="16" id="uCg-2t-Nqz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9VP-ZA-Ccc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnt-xX-84g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D15-xq-Kqw">
@@ -690,6 +1026,10 @@
                                         <point key="value" x="3" y="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButton:" destination="kCO-i1-OGK" eventType="touchUpInside" id="KhT-7T-3Vg"/>
+                                    <segue destination="reb-di-8tw" kind="push" id="iab-3h-Du0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7eg-e0-M5r"/>
@@ -716,16 +1056,68 @@
             </objects>
             <point key="canvasLocation" x="-291" y="-648"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTS-ju-xxo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neg-si-pkx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2qW-0U-eKy">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LFT-yT-8bg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8O-mX-btS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1038" y="14"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nk5-LN-jCR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zCk-vm-b08" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0fC-Gy-6Ce"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w42-SO-mok">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xnq-Eq-2A0" kind="relationship" relationship="rootViewController" id="b6j-pr-9cP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCu-K5-13Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310.7692307692307" y="-656.16113744075824"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="2tL-AL-jjl">
             <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>
+        </designable>
+        <designable name="61r-3f-8yW">
+            <size key="intrinsicContentSize" width="118.66666666666667" height="32"/>
         </designable>
         <designable name="8oj-jR-Ror">
             <size key="intrinsicContentSize" width="148.66666666666666" height="34.333333333333336"/>
         </designable>
         <designable name="FM0-eo-aH3">
             <size key="intrinsicContentSize" width="200" height="34.333333333333336"/>
+        </designable>
+        <designable name="Gje-2H-N0I">
+            <size key="intrinsicContentSize" width="160" height="45.333333333333336"/>
+        </designable>
+        <designable name="IaE-D8-oOe">
+            <size key="intrinsicContentSize" width="156.66666666666666" height="32"/>
+        </designable>
+        <designable name="J5f-dl-9Ci">
+            <size key="intrinsicContentSize" width="47" height="34.333333333333336"/>
+        </designable>
+        <designable name="LNP-Iv-rT9">
+            <size key="intrinsicContentSize" width="154.33333333333334" height="32"/>
         </designable>
         <designable name="UKV-B8-zba">
             <size key="intrinsicContentSize" width="116" height="34"/>
@@ -756,10 +1148,12 @@
         </designable>
     </designables>
     <resources>
+        <image name="Trajnohu-LOGO-1024x1024px-Green" width="997" height="1024"/>
         <image name="Trajnohu-LOGO-1024x1024px-White" width="997" height="1024"/>
         <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="lock" catalog="system" width="125" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

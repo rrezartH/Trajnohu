@@ -19,10 +19,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         setupTextField()
     }
     
-    @IBAction func noAccountBtnPressed(_ sender: Any) {
-        mainVC?.hasAccount = false
-        self.view.removeFromSuperview()
-    }
     func setupTextField() {
         usernameTxtField.delegate = self
         passwordTxtField.delegate = self
