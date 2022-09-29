@@ -15,10 +15,3 @@ struct Exercise {
     var day: String
     var gifUrl: String
 }
-
-//"bodyPart": "waist",
-//  "equipment": "weighted",
-//  "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2371.gif",
-//  "id": "2371",
-//  "name": "weighted russian twist v. 2",
-//  "target": "abs"

@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -507,21 +508,46 @@ Gjurmim i kalorive</string>
             </objects>
             <point key="canvasLocation" x="3360" y="-644"/>
         </scene>
-        <!--View Controller-->
+        <!--Running View Controller-->
         <scene sceneID="Mtn-ez-xJ2">
             <objects>
-                <viewController id="n7y-K3-dg5" sceneMemberID="viewController">
+                <viewController id="n7y-K3-dg5" customClass="RunningViewController" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhL-g3-hmP">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwH-I6-F8f">
+                                <rect key="frame" x="16" y="153" width="358" height="627"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kah pi bjen sot?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k93-f2-lm4">
+                                <rect key="frame" x="16" y="101" width="358" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3Cx-58-CXb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Cx-58-CXb" firstAttribute="trailing" secondItem="k93-f2-lm4" secondAttribute="trailing" constant="16" id="Cp7-xL-2Gt"/>
+                            <constraint firstItem="3Cx-58-CXb" firstAttribute="bottom" secondItem="QwH-I6-F8f" secondAttribute="bottom" constant="30" id="GMT-3d-XYh"/>
+                            <constraint firstItem="QwH-I6-F8f" firstAttribute="leading" secondItem="3Cx-58-CXb" secondAttribute="leading" constant="16" id="LA6-zU-KCX"/>
+                            <constraint firstItem="k93-f2-lm4" firstAttribute="top" secondItem="3Cx-58-CXb" secondAttribute="top" constant="10" id="QVb-7c-Nm3"/>
+                            <constraint firstItem="k93-f2-lm4" firstAttribute="leading" secondItem="3Cx-58-CXb" secondAttribute="leading" constant="16" id="Tla-Bb-EMJ"/>
+                            <constraint firstItem="3Cx-58-CXb" firstAttribute="trailing" secondItem="QwH-I6-F8f" secondAttribute="trailing" constant="16" id="a2q-en-Nl3"/>
+                            <constraint firstItem="QwH-I6-F8f" firstAttribute="top" secondItem="k93-f2-lm4" secondAttribute="bottom" constant="30" id="xyJ-LW-XcB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XfP-np-Z2s"/>
+                    <connections>
+                        <outlet property="runningPathsMKMV" destination="QwH-I6-F8f" id="nl4-PD-mip"/>
+                        <outlet property="titleLbl" destination="k93-f2-lm4" id="QXO-ID-I4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCs-zq-7CL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240" y="80"/>
+            <point key="canvasLocation" x="2240" y="79.620853080568722"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tnA-kX-WAL">
@@ -1120,19 +1146,19 @@ Gjurmim i kalorive</string>
             <size key="intrinsicContentSize" width="154.33333333333334" height="32"/>
         </designable>
         <designable name="UKV-B8-zba">
-            <size key="intrinsicContentSize" width="116" height="34"/>
+            <size key="intrinsicContentSize" width="130" height="34"/>
         </designable>
         <designable name="UUo-R7-Wbu">
             <size key="intrinsicContentSize" width="127.33333333333333" height="34.333333333333336"/>
         </designable>
         <designable name="Z4N-z4-pqu">
-            <size key="intrinsicContentSize" width="83.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="97.666666666666671" height="34"/>
         </designable>
         <designable name="Zw2-1X-32H">
-            <size key="intrinsicContentSize" width="116" height="34"/>
+            <size key="intrinsicContentSize" width="130" height="34"/>
         </designable>
         <designable name="h3B-rt-mwD">
-            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
+            <size key="intrinsicContentSize" width="133" height="34"/>
         </designable>
         <designable name="kAw-CU-NFE">
             <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>
@@ -1141,7 +1167,7 @@ Gjurmim i kalorive</string>
             <size key="intrinsicContentSize" width="61.666666666666664" height="34.333333333333336"/>
         </designable>
         <designable name="nPK-EB-pHK">
-            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
+            <size key="intrinsicContentSize" width="133" height="34"/>
         </designable>
         <designable name="ps3-z2-8ha">
             <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>

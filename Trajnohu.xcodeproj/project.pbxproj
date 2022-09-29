@@ -15,6 +15,10 @@
 		594BDCF128DA596F005B6408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594BDCF028DA596F005B6408 /* Assets.xcassets */; };
 		595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3428DB37A0006E16C4 /* LoginVC.swift */; };
 		595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A7C3628DB3C13006E16C4 /* RegisterVC.swift */; };
+		5961D6AB28E64FF400CA1FD1 /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961D6AA28E64FF400CA1FD1 /* RunningViewController.swift */; };
+		5961D6AE28E65B4400CA1FD1 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961D6AD28E65B4400CA1FD1 /* City.swift */; };
+		5961D6B028E65B8000CA1FD1 /* RunningPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961D6AF28E65B8000CA1FD1 /* RunningPath.swift */; };
+		5961D6B228E65BEE00CA1FD1 /* RunningPathPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5961D6B128E65BEE00CA1FD1 /* RunningPathPoint.swift */; };
 		59B2FE5628E4FC03003485C4 /* FitnessPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */; };
 		59B2FE5828E4FCD3003485C4 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B2FE5728E4FCD3003485C4 /* Exercise.swift */; };
 		59E693B728E4B10A008F2D87 /* FitnessPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E693B528E4B10A008F2D87 /* FitnessPlanCell.swift */; };
@@ -36,6 +40,10 @@
 		594BDCF028DA596F005B6408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		595A7C3428DB37A0006E16C4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		595A7C3628DB3C13006E16C4 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		5961D6AA28E64FF400CA1FD1 /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
+		5961D6AD28E65B4400CA1FD1 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		5961D6AF28E65B8000CA1FD1 /* RunningPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningPath.swift; sourceTree = "<group>"; };
+		5961D6B128E65BEE00CA1FD1 /* RunningPathPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningPathPoint.swift; sourceTree = "<group>"; };
 		59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlan.swift; sourceTree = "<group>"; };
 		59B2FE5728E4FCD3003485C4 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		59E693B528E4B10A008F2D87 /* FitnessPlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlanCell.swift; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		594BDCED28DA4705005B6408 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5961D6A928E64FC000CA1FD1 /* Runnning */,
 				59E693B928E4B116008F2D87 /* FitnessTraining */,
 				596E141828DCD3A100E75D76 /* Register */,
 				594BDCDD28DA4553005B6408 /* ViewController.swift */,
@@ -112,10 +121,37 @@
 		594BDCEF28DA4712005B6408 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5961D6B328E65C4600CA1FD1 /* FitnessTraining */,
+				5961D6AC28E65B3100CA1FD1 /* Running */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5961D6A928E64FC000CA1FD1 /* Runnning */ = {
+			isa = PBXGroup;
+			children = (
+				5961D6AA28E64FF400CA1FD1 /* RunningViewController.swift */,
+			);
+			path = Runnning;
+			sourceTree = "<group>";
+		};
+		5961D6AC28E65B3100CA1FD1 /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				5961D6AD28E65B4400CA1FD1 /* City.swift */,
+				5961D6AF28E65B8000CA1FD1 /* RunningPath.swift */,
+				5961D6B128E65BEE00CA1FD1 /* RunningPathPoint.swift */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		5961D6B328E65C4600CA1FD1 /* FitnessTraining */ = {
+			isa = PBXGroup;
+			children = (
 				59B2FE5528E4FC03003485C4 /* FitnessPlan.swift */,
 				59B2FE5728E4FCD3003485C4 /* Exercise.swift */,
 			);
-			path = Model;
+			path = FitnessTraining;
 			sourceTree = "<group>";
 		};
 		596E141828DCD3A100E75D76 /* Register */ = {
@@ -282,8 +318,12 @@
 				59B2FE5628E4FC03003485C4 /* FitnessPlan.swift in Sources */,
 				595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */,
 				59E693B728E4B10A008F2D87 /* FitnessPlanCell.swift in Sources */,
+				5961D6AB28E64FF400CA1FD1 /* RunningViewController.swift in Sources */,
+				5961D6AE28E65B4400CA1FD1 /* City.swift in Sources */,
 				594BDCDC28DA4553005B6408 /* SceneDelegate.swift in Sources */,
 				595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */,
+				5961D6B028E65B8000CA1FD1 /* RunningPath.swift in Sources */,
+				5961D6B228E65BEE00CA1FD1 /* RunningPathPoint.swift in Sources */,
 				59B2FE5828E4FCD3003485C4 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
