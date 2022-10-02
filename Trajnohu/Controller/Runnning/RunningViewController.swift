@@ -209,7 +209,6 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, UIPick
             pointsToDrawBetween.append(pathPoint)
             
             if count == 2 {
-                print("path draw")
                 drawPathBetween(start: pointsToDrawBetween[0], end: pointsToDrawBetween[1])
                 pointsToDrawBetween.removeFirst()
                 count = 1
@@ -235,7 +234,6 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, UIPick
             if let response = response {
                 let routes = response.routes
                 if routes.count > 0 {
-                    print("add overlay")
                     self.runningPathsMKMV.addOverlay(routes[0].polyline, level: .aboveRoads)
                 }
             }
@@ -250,5 +248,3 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, UIPick
     }
     
 }
-
-
