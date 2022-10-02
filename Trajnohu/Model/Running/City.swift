@@ -9,5 +9,6 @@ import Foundation
 
 struct City {
     var name: String
+    var region: Region
     var runningPaths: [RunningPath]
 }
