@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 struct RunningPathPoint {
     var title: String

@@ -49,6 +49,12 @@ class FitnessExercisesVC: UIViewController, UITableViewDelegate, UITableViewData
         let plan2 = FitnessPlan(nameOfPlan: "Burn Fat", weekdays: ["Monday", "Wednesday", "Friday"])
         fitnessPlansArray.append(plan1)
         fitnessPlansArray.append(plan2)
+        fitnessPlansArray.append(plan1)
+        fitnessPlansArray.append(plan2)
+        fitnessPlansArray.append(plan1)
+        fitnessPlansArray.append(plan2)
+        fitnessPlansArray.append(plan1)
+        fitnessPlansArray.append(plan2)
         fitnessPlansTV.reloadData()
     }
     

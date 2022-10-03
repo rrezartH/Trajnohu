@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xnq-Eq-2A0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neg-si-pkx">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
-        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trajnohu-LOGO-1024x1024px-White" translatesAutoresizingMaskIntoConstraints="NO" id="4yq-v2-ERx">
-                                <rect key="frame" x="155" y="131" width="80" height="80"/>
+                                <rect key="frame" x="155" y="128" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4yq-v2-ERx" secondAttribute="height" multiplier="1:1" id="N8J-aQ-hnw"/>
                                     <constraint firstAttribute="height" constant="80" id="ZwO-PD-RBY"/>
@@ -27,13 +26,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAJNOHU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hko-b6-udH">
-                                <rect key="frame" x="16" y="216" width="358" height="22"/>
+                                <rect key="frame" x="16" y="213" width="358" height="22"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PPZ-xL-3yu" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="268" width="358" height="350"/>
+                                <rect key="frame" x="16" y="265" width="358" height="350"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="vgP-fQ-SBX"/>
@@ -48,7 +47,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-jR-Ror" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="628" width="358" height="35"/>
+                                <rect key="frame" x="16" y="625" width="358" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Nuk keni llogari?">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Qv-Ns-lK5">
-                                <rect key="frame" x="16" y="125.66666666666669" width="358" height="118"/>
+                                <rect key="frame" x="16" y="122.66666666666669" width="358" height="118"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eY5-K1-tQC">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="118"/>
@@ -129,7 +128,7 @@
                                                         <real key="value" value="-1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                                        <imageReference key="value" image="person" catalog="system" renderingMode="hierarchical-single" variableValue="0.0">
+                                                        <imageReference key="value" image="person" catalog="system" renderingMode="hierarchical-single">
                                                             <hierarchicalColors>
                                                                 <color red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color systemColor="secondaryLabelColor"/>
@@ -166,7 +165,7 @@
                                                         <real key="value" value="-1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                                        <imageReference key="value" image="lock" catalog="system" renderingMode="hierarchical-single" variableValue="0.0">
+                                                        <imageReference key="value" image="lock" catalog="system" renderingMode="hierarchical-single">
                                                             <hierarchicalColors>
                                                                 <color red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color systemColor="secondaryLabelColor"/>
@@ -184,13 +183,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyqu ne llogari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-es-fOs">
-                                <rect key="frame" x="16" y="67" width="358" height="28.666666666666671"/>
+                                <rect key="frame" x="16" y="63.999999999999993" width="358" height="28.666666666666664"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LsI-hq-lhB">
-                                <rect key="frame" x="16" y="273.66666666666669" width="358" height="108"/>
+                                <rect key="frame" x="16" y="270.66666666666669" width="358" height="108"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEg-4X-Od7" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
@@ -295,17 +294,17 @@
             <objects>
                 <viewController id="Xnq-Eq-2A0" customClass="MainPageVC" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJo-9n-B5s">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Mx-Cl-vze">
-                                <rect key="frame" x="16" y="235" width="358" height="317"/>
+                                <rect key="frame" x="16" y="236.66666666666663" width="358" height="317"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Mb1-TN-Uvk">
-                                        <rect key="frame" x="16" y="0.0" width="326" height="150.66666666666666"/>
+                                        <rect key="frame" x="16" y="0.0" width="326" height="150.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNP-Iv-rT9" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.33333333333334"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Trajnime ne Fitnes" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -336,7 +335,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaE-D8-oOe" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.66666666666666"/>
+                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.33333333333334"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="IaE-D8-oOe" secondAttribute="height" multiplier="1:1" id="n4y-vd-m3O"/>
                                                 </constraints>
@@ -366,16 +365,16 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="8bp-Om-5DL" kind="show" id="56X-Wm-lF4"/>
+                                                    <segue destination="aVR-ll-2T5" kind="show" id="oP1-XW-5XZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zRo-ts-jb9">
-                                        <rect key="frame" x="16" y="166.66666666666669" width="326" height="150.33333333333331"/>
+                                        <rect key="frame" x="16" y="166.33333333333337" width="326" height="150.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61r-3f-8yW" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="150.66666666666666"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Dua te vrapoj" titleAlignment="center">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -406,7 +405,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gje-2H-N0I" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.33333333333334"/>
+                                                <rect key="frame" x="175.66666666666663" y="0.0" width="150.33333333333337" height="150.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Gje-2H-N0I" secondAttribute="height" id="QIa-at-eF6"/>
                                                 </constraints>
@@ -450,26 +449,26 @@ Gjurmim i kalorive</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ne cfare menyre deshiron ta permiresosh kualitetin e shendetit tend?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-ct-l8W">
-                                <rect key="frame" x="30" y="149" width="330" height="36"/>
+                                <rect key="frame" x="30" y="150.66666666666666" width="330" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trajnohu-LOGO-1024x1024px-Green" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-DX-8eE">
-                                <rect key="frame" x="110" y="660" width="170" height="168"/>
+                                <rect key="frame" x="110" y="663" width="170" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="YcM-HE-IBZ"/>
                                     <constraint firstAttribute="width" constant="170" id="ume-eb-m3O"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pershendetje Alban!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-sS-fT4">
-                                <rect key="frame" x="16" y="109" width="358" height="24"/>
+                                <rect key="frame" x="16" y="110.66666666666667" width="358" height="24.000000000000014"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-Hp-F1m" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="63" width="33" height="33"/>
+                                <rect key="frame" x="16" y="60" width="33" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="ULX-6D-EEd"/>
                                     <constraint firstAttribute="width" secondItem="CCg-Hp-F1m" secondAttribute="height" id="usV-6p-2dw"/>
@@ -524,7 +523,7 @@ Gjurmim i kalorive</string>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WJt-bF-S6l">
-                            <rect key="frame" x="0.0" y="47" width="217" height="480"/>
+                            <rect key="frame" x="0.0" y="44" width="217" height="483"/>
                             <color key="backgroundColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="separatorColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="sectionIndexBackgroundColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -543,42 +542,25 @@ Gjurmim i kalorive</string>
             </objects>
             <point key="canvasLocation" x="2240" y="-656.16113744075824"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="B72-LX-gQv">
-            <objects>
-                <viewController id="8bp-Om-5DL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="keu-Ez-G3g">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="L1n-pY-e9Y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="54V-sm-wSF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nmW-Gg-hlq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3795" y="-648"/>
-        </scene>
         <!--Running View Controller-->
         <scene sceneID="Mtn-ez-xJ2">
             <objects>
                 <viewController id="n7y-K3-dg5" customClass="RunningViewController" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhL-g3-hmP">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwH-I6-F8f">
-                                <rect key="frame" x="16" y="198.66666666666669" width="358" height="558.33333333333326"/>
-                                <standardMapConfiguration key="preferredConfiguration"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QwH-I6-F8f">
+                                <rect key="frame" x="16" y="195.66666666666669" width="358" height="564.33333333333326"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kah pi bjen sot?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k93-f2-lm4">
-                                <rect key="frame" x="16" y="56.999999999999993" width="358" height="21.666666666666664"/>
+                                <rect key="frame" x="16" y="53.999999999999993" width="358" height="21.666666666666664"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="O7d-rQ-KPE">
-                                <rect key="frame" x="16" y="108.66666666666669" width="358" height="40"/>
+                                <rect key="frame" x="16" y="105.66666666666667" width="358" height="40.000000000000014"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-f8-mTF">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="40"/>
@@ -641,7 +623,7 @@ Gjurmim i kalorive</string>
             <objects>
                 <viewController id="Eu4-LD-O5e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wl6-WW-u8e">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Svf-in-TQ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -652,16 +634,58 @@ Gjurmim i kalorive</string>
             </objects>
             <point key="canvasLocation" x="3390" y="71"/>
         </scene>
+        <!--Motivation View Controller-->
+        <scene sceneID="kDC-hM-V3M">
+            <objects>
+                <viewController storyboardIdentifier="MotivationViewController" id="aVR-ll-2T5" customClass="MotivationViewController" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0k4-Yn-gIs">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4Y-sI-P1W">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                                <color key="backgroundColor" red="0.67757579420000003" green="1" blue="0.6013764881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="p1V-BP-Pg9"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-WT-NLN">
+                                <rect key="frame" x="0.0" y="152" width="390" height="686"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="bKn-c4-UPa"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lzr-wh-MWP"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K1y-WC-Y7S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D4Y-sI-P1W" firstAttribute="leading" secondItem="K1y-WC-Y7S" secondAttribute="leading" id="1Jb-ya-weU"/>
+                            <constraint firstItem="XdO-WT-NLN" firstAttribute="leading" secondItem="K1y-WC-Y7S" secondAttribute="leading" id="2ET-Vb-MdZ"/>
+                            <constraint firstItem="D4Y-sI-P1W" firstAttribute="trailing" secondItem="K1y-WC-Y7S" secondAttribute="trailing" id="Fq2-Ud-HIZ"/>
+                            <constraint firstItem="D4Y-sI-P1W" firstAttribute="top" secondItem="0k4-Yn-gIs" secondAttribute="top" id="aAW-Lr-MGW"/>
+                            <constraint firstItem="XdO-WT-NLN" firstAttribute="trailing" secondItem="K1y-WC-Y7S" secondAttribute="trailing" id="diG-0s-qbh"/>
+                            <constraint firstItem="XdO-WT-NLN" firstAttribute="top" secondItem="D4Y-sI-P1W" secondAttribute="bottom" id="pq7-U2-31D"/>
+                            <constraint firstAttribute="bottom" secondItem="XdO-WT-NLN" secondAttribute="bottom" id="zND-Wc-7oh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z26-NF-7GJ"/>
+                    <connections>
+                        <outlet property="horizontalScrollView" destination="XdO-WT-NLN" id="uuF-50-iwi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTH-ML-l11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4220" y="64.691943127962077"/>
+        </scene>
         <!--Fitness ExercisesVC-->
         <scene sceneID="DKy-Gh-IWY">
             <objects>
                 <viewController id="TSs-K9-Uge" customClass="FitnessExercisesVC" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZgL-C9-yeh">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-pl-CIE">
-                                <rect key="frame" x="16" y="57" width="358" height="45.666666666666657"/>
+                                <rect key="frame" x="16" y="54" width="358" height="45.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krijo nje plan trajnimi." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXx-29-IaY">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="20.333333333333332"/>
@@ -678,15 +702,15 @@ Gjurmim i kalorive</string>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-26-dzd">
-                                <rect key="frame" x="16" y="199.66666666666669" width="358" height="557.33333333333326"/>
+                                <rect key="frame" x="16" y="193" width="358" height="567"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-X6-45j">
-                                <rect key="frame" x="16" y="132.66666666666666" width="182.66666666666666" height="47"/>
+                                <rect key="frame" x="16" y="129.66666666666666" width="179" height="43.333333333333343"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-dl-9Ci" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="47"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="43.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="J5f-dl-9Ci" secondAttribute="height" id="qrx-Hd-tut"/>
                                         </constraints>
@@ -704,7 +728,7 @@ Gjurmim i kalorive</string>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shto plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKs-R0-XHf">
-                                        <rect key="frame" x="77" y="9.3333333333333446" width="105.66666666666669" height="28.666666666666671"/>
+                                        <rect key="frame" x="73.333333333333314" y="7.3333333333333446" width="105.66666666666669" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -745,7 +769,7 @@ Gjurmim i kalorive</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hajde t'njihemi pak.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-PP-OLq">
-                                <rect key="frame" x="16" y="237" width="358" height="28.666666666666686"/>
+                                <rect key="frame" x="16" y="234" width="358" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -984,13 +1008,13 @@ Gjurmim i kalorive</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krijo llogari" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gP-4g-unG">
-                                <rect key="frame" x="16" y="67" width="358" height="28.666666666666671"/>
+                                <rect key="frame" x="16" y="63.999999999999993" width="358" height="28.666666666666664"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wvw-pp-Wn2">
-                                <rect key="frame" x="16" y="125.66666666666669" width="358" height="192"/>
+                                <rect key="frame" x="16" y="122.66666666666669" width="358" height="192"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G9l-1o-8tv">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="192"/>
@@ -1016,7 +1040,7 @@ Gjurmim i kalorive</string>
                                                         <real key="value" value="-1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                                        <imageReference key="value" image="person" catalog="system" renderingMode="hierarchical-single" variableValue="0.0">
+                                                        <imageReference key="value" image="person" catalog="system" renderingMode="hierarchical-single">
                                                             <hierarchicalColors>
                                                                 <color red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color systemColor="secondaryLabelColor"/>
@@ -1053,7 +1077,7 @@ Gjurmim i kalorive</string>
                                                         <real key="value" value="-1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                                        <imageReference key="value" image="envelope" catalog="system" renderingMode="hierarchical-single" variableValue="0.0">
+                                                        <imageReference key="value" image="envelope" catalog="system" renderingMode="hierarchical-single">
                                                             <hierarchicalColors>
                                                                 <color red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color systemColor="secondaryLabelColor"/>
@@ -1090,7 +1114,7 @@ Gjurmim i kalorive</string>
                                                         <real key="value" value="-1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage">
-                                                        <imageReference key="value" image="lock" catalog="system" renderingMode="hierarchical-single" variableValue="0.0">
+                                                        <imageReference key="value" image="lock" catalog="system" renderingMode="hierarchical-single">
                                                             <hierarchicalColors>
                                                                 <color red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color systemColor="secondaryLabelColor"/>
@@ -1108,7 +1132,7 @@ Gjurmim i kalorive</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUo-R7-Wbu" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="337.66666666666669" width="358" height="44"/>
+                                <rect key="frame" x="16" y="334.66666666666669" width="358" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="shg-2i-scw"/>
                                 </constraints>
@@ -1175,7 +1199,7 @@ Gjurmim i kalorive</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neg-si-pkx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2qW-0U-eKy">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1190,19 +1214,19 @@ Gjurmim i kalorive</string>
     </scenes>
     <designables>
         <designable name="2tL-AL-jjl">
-            <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="72.333333333333329" height="31"/>
         </designable>
         <designable name="61r-3f-8yW">
             <size key="intrinsicContentSize" width="118.66666666666667" height="32"/>
         </designable>
         <designable name="8oj-jR-Ror">
-            <size key="intrinsicContentSize" width="148.66666666666666" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="130" height="31"/>
         </designable>
         <designable name="CCg-Hp-F1m">
-            <size key="intrinsicContentSize" width="47.333333333333336" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="43.666666666666664" height="30.666666666666668"/>
         </designable>
         <designable name="FM0-eo-aH3">
-            <size key="intrinsicContentSize" width="200" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="174" height="31"/>
         </designable>
         <designable name="Gje-2H-N0I">
             <size key="intrinsicContentSize" width="160" height="45.333333333333336"/>
@@ -1211,45 +1235,45 @@ Gjurmim i kalorive</string>
             <size key="intrinsicContentSize" width="156.66666666666666" height="32"/>
         </designable>
         <designable name="J5f-dl-9Ci">
-            <size key="intrinsicContentSize" width="47" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="43.333333333333336" height="30.666666666666668"/>
         </designable>
         <designable name="LNP-Iv-rT9">
             <size key="intrinsicContentSize" width="154.33333333333334" height="32"/>
         </designable>
         <designable name="UKV-B8-zba">
-            <size key="intrinsicContentSize" width="116" height="34"/>
+            <size key="intrinsicContentSize" width="130" height="34"/>
         </designable>
         <designable name="UUo-R7-Wbu">
-            <size key="intrinsicContentSize" width="127.33333333333333" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="112" height="31"/>
         </designable>
         <designable name="Z4N-z4-pqu">
-            <size key="intrinsicContentSize" width="83.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="97.666666666666671" height="34"/>
         </designable>
         <designable name="Zw2-1X-32H">
-            <size key="intrinsicContentSize" width="116" height="34"/>
+            <size key="intrinsicContentSize" width="130" height="34"/>
         </designable>
         <designable name="h3B-rt-mwD">
-            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
+            <size key="intrinsicContentSize" width="133" height="34"/>
         </designable>
         <designable name="kAw-CU-NFE">
-            <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="72.333333333333329" height="31"/>
         </designable>
         <designable name="kEg-4X-Od7">
-            <size key="intrinsicContentSize" width="61.666666666666664" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="56" height="31"/>
         </designable>
         <designable name="nPK-EB-pHK">
-            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
+            <size key="intrinsicContentSize" width="133" height="34"/>
         </designable>
         <designable name="ps3-z2-8ha">
-            <size key="intrinsicContentSize" width="81.333333333333329" height="34.333333333333336"/>
+            <size key="intrinsicContentSize" width="72.333333333333329" height="31"/>
         </designable>
     </designables>
     <resources>
         <image name="Trajnohu-LOGO-1024x1024px-Green" width="997" height="1024"/>
         <image name="Trajnohu-LOGO-1024x1024px-White" width="997" height="1024"/>
         <image name="envelope" catalog="system" width="128" height="93"/>
-        <image name="lock" catalog="system" width="125" height="128"/>
-        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="secondaryLabelColor">
@@ -1259,7 +1283,7 @@ Gjurmim i kalorive</string>
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

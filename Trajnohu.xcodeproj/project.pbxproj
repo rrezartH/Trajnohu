@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,8 @@
 		59E693B828E4B10A008F2D87 /* FitnessPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */; };
 		59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */; };
 		9FFEA273276E2C1D50197D10 /* Pods_Trajnohu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F50BB5C2B13DCDB3384F85 /* Pods_Trajnohu.framework */; };
+		CABC88E628EB2C3300EC56E9 /* MotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC88E528EB2C3300EC56E9 /* MotivationViewController.swift */; };
+		CABC88E828EB2EA000EC56E9 /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC88E728EB2EA000EC56E9 /* Motivation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessPlanCell.xib; sourceTree = "<group>"; };
 		59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessExercisesVC.swift; sourceTree = "<group>"; };
 		60AA06759ED8A099D9D3D3C3 /* Pods-Trajnohu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trajnohu.debug.xcconfig"; path = "Target Support Files/Pods-Trajnohu/Pods-Trajnohu.debug.xcconfig"; sourceTree = "<group>"; };
+		CABC88E528EB2C3300EC56E9 /* MotivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationViewController.swift; sourceTree = "<group>"; };
+		CABC88E728EB2EA000EC56E9 /* Motivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		594BDCED28DA4705005B6408 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CABC88E428EB272700EC56E9 /* HomeTraining */,
 				59D8D4E328EA2015008EE5CD /* MainPage */,
 				5961D6A928E64FC000CA1FD1 /* Runnning */,
 				59E693B928E4B116008F2D87 /* FitnessTraining */,
@@ -136,6 +141,7 @@
 				5961D6B328E65C4600CA1FD1 /* FitnessTraining */,
 				5961D6AC28E65B3100CA1FD1 /* Running */,
 				59C00BAB28EA28AA00635BF8 /* MenuItem.swift */,
+				CABC88E728EB2EA000EC56E9 /* Motivation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +216,14 @@
 			path = FitnessTraining;
 			sourceTree = "<group>";
 		};
+		CABC88E428EB272700EC56E9 /* HomeTraining */ = {
+			isa = PBXGroup;
+			children = (
+				CABC88E528EB2C3300EC56E9 /* MotivationViewController.swift */,
+			);
+			path = HomeTraining;
+			sourceTree = "<group>";
+		};
 		D0B3AEF897FA8D7C891AEC3E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,12 +274,12 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					594BDCD528DA4553005B6408 = {
-						CreatedOnToolsVersion = 14.0;
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
 			buildConfigurationList = 594BDCD128DA4553005B6408 /* Build configuration list for PBXProject "Trajnohu" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -348,6 +362,7 @@
 				594BDCDE28DA4553005B6408 /* ViewController.swift in Sources */,
 				59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */,
 				594BDCDA28DA4553005B6408 /* AppDelegate.swift in Sources */,
+				CABC88E628EB2C3300EC56E9 /* MotivationViewController.swift in Sources */,
 				59B2FE5628E4FC03003485C4 /* FitnessPlan.swift in Sources */,
 				595A7C3528DB37A0006E16C4 /* LoginVC.swift in Sources */,
 				59E693B728E4B10A008F2D87 /* FitnessPlanCell.swift in Sources */,
@@ -355,6 +370,7 @@
 				5961D6AB28E64FF400CA1FD1 /* RunningViewController.swift in Sources */,
 				5961D6AE28E65B4400CA1FD1 /* City.swift in Sources */,
 				594BDCDC28DA4553005B6408 /* SceneDelegate.swift in Sources */,
+				CABC88E828EB2EA000EC56E9 /* Motivation.swift in Sources */,
 				59C00BA928EA27D800635BF8 /* MenuTableViewCell.swift in Sources */,
 				595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */,
 				5961D6B028E65B8000CA1FD1 /* RunningPath.swift in Sources */,
@@ -436,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -490,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
