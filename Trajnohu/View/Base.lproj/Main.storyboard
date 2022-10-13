@@ -649,10 +649,8 @@ Gjurmim i kalorive</string>
                                     <constraint firstAttribute="height" constant="150" id="p1V-BP-Pg9"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-WT-NLN">
-                                <rect key="frame" x="0.0" y="152" width="390" height="686"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="bKn-c4-UPa"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="lzr-wh-MWP"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdO-WT-NLN">
+                                <rect key="frame" x="0.0" y="150" width="390" height="640"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K1y-WC-Y7S"/>

@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.6.2)
   - Charts (4.1.0):
     - Charts/Core (= 4.1.0)
   - Charts/Core (4.1.0):
@@ -14,8 +15,10 @@ PODS:
   - SDWebImage/Core (5.13.2)
   - SwiftAlgorithms (1.0.0)
   - SwiftLint (0.49.1)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Charts
   - IBAnimatable
   - Kingfisher
@@ -23,9 +26,11 @@ DEPENDENCIES:
   - NVActivityIndicatorView
   - SDWebImage
   - SwiftLint
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Charts
     - IBAnimatable
     - Kingfisher
@@ -34,8 +39,10 @@ SPEC REPOS:
     - SDWebImage
     - SwiftAlgorithms
     - SwiftLint
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   Charts: 354f86803d11d9c35de280587fef50d1af063978
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
@@ -44,7 +51,8 @@ SPEC CHECKSUMS:
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 6ada4ae415de61cc93f2331d9ccced9d0e3fde46
+PODFILE CHECKSUM: 106abdbb1481e8deb24fc9ad1a3926014a1580a4
 
 COCOAPODS: 1.11.3

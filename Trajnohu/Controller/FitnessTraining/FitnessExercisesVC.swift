@@ -19,6 +19,7 @@ class FitnessExercisesVC: UIViewController, UITableViewDelegate, UITableViewData
         setupPlansTV()
         createFitnessPlans()
         checkForFitnessPlans()
+        //getExercises()
     }
     
     func setupPlansTV() {
@@ -33,6 +34,8 @@ class FitnessExercisesVC: UIViewController, UITableViewDelegate, UITableViewData
             noPlanSW.alpha = 0
         }
     }
+    
+   
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = fitnessPlansTV.dequeueReusableCell(withIdentifier: "FitnessPlanCell") as! FitnessPlanCell

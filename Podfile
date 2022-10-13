@@ -13,5 +13,7 @@ target 'Trajnohu' do
 	pod 'SDWebImage'
 	pod 'NVActivityIndicatorView'
 	pod 'lottie-ios' 
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
 
 end
