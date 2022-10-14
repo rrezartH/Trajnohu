@@ -30,6 +30,7 @@
 		59E693B828E4B10A008F2D87 /* FitnessPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */; };
 		59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */; };
 		9FFEA273276E2C1D50197D10 /* Pods_Trajnohu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F50BB5C2B13DCDB3384F85 /* Pods_Trajnohu.framework */; };
+		CA06878D28F9F9A800A516EB /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06878C28F9F9A800A516EB /* iOSDevCenters+GIF.swift */; };
 		CA273A2928F8218000F751FE /* FitnessPlanDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA273A2728F8217F00F751FE /* FitnessPlanDataModel.xcdatamodeld */; };
 		CA273A2C28F8233900F751FE /* ExcercisesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA273A2B28F8233900F751FE /* ExcercisesRequest.swift */; };
 		CABA722C28F993FA002D145C /* FitnessPlanDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA722B28F993FA002D145C /* FitnessPlanDaysViewController.swift */; };
@@ -38,7 +39,6 @@
 		CABA723428F9B026002D145C /* FitnessExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA723228F9B026002D145C /* FitnessExerciseTableViewCell.swift */; };
 		CABA723528F9B026002D145C /* FitnessExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CABA723328F9B026002D145C /* FitnessExerciseTableViewCell.xib */; };
 		CABA723A28F9BB73002D145C /* FitnessDayExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA723928F9BB73002D145C /* FitnessDayExerciseViewController.swift */; };
-		CABA723C28F9F432002D145C /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABA723B28F9F432002D145C /* iOSDevCenters+GIF.swift */; };
 		CABC88E628EB2C3300EC56E9 /* MotivationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC88E528EB2C3300EC56E9 /* MotivationViewController.swift */; };
 		CABC88E828EB2EA000EC56E9 /* Motivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABC88E728EB2EA000EC56E9 /* Motivation.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +71,7 @@
 		59E693B628E4B10A008F2D87 /* FitnessPlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessPlanCell.xib; sourceTree = "<group>"; };
 		59E693BA28E4B1A0008F2D87 /* FitnessExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessExercisesVC.swift; sourceTree = "<group>"; };
 		60AA06759ED8A099D9D3D3C3 /* Pods-Trajnohu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trajnohu.debug.xcconfig"; path = "Target Support Files/Pods-Trajnohu/Pods-Trajnohu.debug.xcconfig"; sourceTree = "<group>"; };
+		CA06878C28F9F9A800A516EB /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		CA273A2828F8218000F751FE /* FitnessPlanDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessPlanDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CA273A2B28F8233900F751FE /* ExcercisesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcercisesRequest.swift; sourceTree = "<group>"; };
 		CABA722B28F993FA002D145C /* FitnessPlanDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlanDaysViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		CABA723228F9B026002D145C /* FitnessExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FitnessExerciseTableViewCell.swift; path = FitnessExerciseCell/FitnessExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		CABA723328F9B026002D145C /* FitnessExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FitnessExerciseTableViewCell.xib; path = FitnessExerciseCell/FitnessExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		CABA723928F9BB73002D145C /* FitnessDayExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessDayExerciseViewController.swift; sourceTree = "<group>"; };
-		CABA723B28F9F432002D145C /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "iOSDevCenters+GIF.swift"; path = "../../../Downloads/GIF-Swift-master/GIF-Swift/iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		CABC88E528EB2C3300EC56E9 /* MotivationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationViewController.swift; sourceTree = "<group>"; };
 		CABC88E728EB2EA000EC56E9 /* Motivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motivation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +117,7 @@
 		594BDCD828DA4553005B6408 /* Trajnohu */ = {
 			isa = PBXGroup;
 			children = (
-				CABA723B28F9F432002D145C /* iOSDevCenters+GIF.swift */,
+				CA06878C28F9F9A800A516EB /* iOSDevCenters+GIF.swift */,
 				CA273A2A28F8232200F751FE /* NetworkLayer */,
 				594BDCEF28DA4712005B6408 /* Model */,
 				594BDCEE28DA470C005B6408 /* View */,
@@ -408,7 +408,6 @@
 				CABA722C28F993FA002D145C /* FitnessPlanDaysViewController.swift in Sources */,
 				594BDCDE28DA4553005B6408 /* ViewController.swift in Sources */,
 				CABA723A28F9BB73002D145C /* FitnessDayExerciseViewController.swift in Sources */,
-				CABA723C28F9F432002D145C /* iOSDevCenters+GIF.swift in Sources */,
 				59E693BB28E4B1A0008F2D87 /* FitnessExercisesVC.swift in Sources */,
 				594BDCDA28DA4553005B6408 /* AppDelegate.swift in Sources */,
 				CABC88E628EB2C3300EC56E9 /* MotivationViewController.swift in Sources */,
@@ -425,6 +424,7 @@
 				595A7C3728DB3C13006E16C4 /* RegisterVC.swift in Sources */,
 				5961D6B028E65B8000CA1FD1 /* RunningPath.swift in Sources */,
 				59D8D4E228EA039A008EE5CD /* Region.swift in Sources */,
+				CA06878D28F9F9A800A516EB /* iOSDevCenters+GIF.swift in Sources */,
 				CABA723428F9B026002D145C /* FitnessExerciseTableViewCell.swift in Sources */,
 				CA273A2928F8218000F751FE /* FitnessPlanDataModel.xcdatamodeld in Sources */,
 				5961D6B228E65BEE00CA1FD1 /* RunningPathPoint.swift in Sources */,

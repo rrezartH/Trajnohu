@@ -808,16 +808,17 @@ Gjurmim i kalorive</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTD-dG-bTk">
                                 <rect key="frame" x="16" y="74" width="358" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-Fa-iyf">
                                 <rect key="frame" x="16" y="128" width="358" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sbr-fM-HwU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.41568624970000001" green="0.71372550729999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Sbr-fM-HwU" firstAttribute="bottom" secondItem="xKT-Fa-iyf" secondAttribute="bottom" constant="16" id="5ls-50-VVu"/>
                             <constraint firstItem="xKT-Fa-iyf" firstAttribute="top" secondItem="YTD-dG-bTk" secondAttribute="bottom" constant="30" id="8qJ-g3-AQf"/>
@@ -1318,19 +1319,19 @@ Gjurmim i kalorive</string>
             <size key="intrinsicContentSize" width="154.33333333333334" height="32"/>
         </designable>
         <designable name="UKV-B8-zba">
-            <size key="intrinsicContentSize" width="130" height="34"/>
+            <size key="intrinsicContentSize" width="116" height="34"/>
         </designable>
         <designable name="UUo-R7-Wbu">
             <size key="intrinsicContentSize" width="112" height="31"/>
         </designable>
         <designable name="Z4N-z4-pqu">
-            <size key="intrinsicContentSize" width="97.666666666666671" height="34"/>
+            <size key="intrinsicContentSize" width="83.666666666666671" height="34"/>
         </designable>
         <designable name="Zw2-1X-32H">
-            <size key="intrinsicContentSize" width="130" height="34"/>
+            <size key="intrinsicContentSize" width="116" height="34"/>
         </designable>
         <designable name="h3B-rt-mwD">
-            <size key="intrinsicContentSize" width="133" height="34"/>
+            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
         </designable>
         <designable name="kAw-CU-NFE">
             <size key="intrinsicContentSize" width="72.333333333333329" height="31"/>
@@ -1339,7 +1340,7 @@ Gjurmim i kalorive</string>
             <size key="intrinsicContentSize" width="56" height="31"/>
         </designable>
         <designable name="nPK-EB-pHK">
-            <size key="intrinsicContentSize" width="133" height="34"/>
+            <size key="intrinsicContentSize" width="118.66666666666667" height="34"/>
         </designable>
         <designable name="ps3-z2-8ha">
             <size key="intrinsicContentSize" width="72.333333333333329" height="31"/>
