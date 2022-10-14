@@ -14,6 +14,7 @@ PODS:
     - SDWebImage/Core (= 5.13.2)
   - SDWebImage/Core (5.13.2)
   - SwiftAlgorithms (1.0.0)
+  - SwiftGifOrigin (1.7.0)
   - SwiftLint (0.49.1)
   - SwiftyJSON (5.0.1)
 
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - lottie-ios
   - NVActivityIndicatorView
   - SDWebImage
+  - SwiftGifOrigin
   - SwiftLint
   - SwiftyJSON
 
@@ -38,6 +40,7 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - SDWebImage
     - SwiftAlgorithms
+    - SwiftGifOrigin
     - SwiftLint
     - SwiftyJSON
 
@@ -50,9 +53,10 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 106abdbb1481e8deb24fc9ad1a3926014a1580a4
+PODFILE CHECKSUM: 5f8b8a7b4d855108bf98c09497ba5cfc64a3b9d5
 
 COCOAPODS: 1.11.3

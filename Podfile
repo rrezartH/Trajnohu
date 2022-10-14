@@ -15,5 +15,6 @@ target 'Trajnohu' do
 	pod 'lottie-ios' 
 	pod 'Alamofire'
 	pod 'SwiftyJSON'
+	pod 'SwiftGifOrigin'
 
 end

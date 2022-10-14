@@ -699,11 +699,6 @@ Gjurmim i kalorive</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-26-dzd">
-                                <rect key="frame" x="16" y="193" width="358" height="567"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="separatorColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-X6-45j">
                                 <rect key="frame" x="16" y="129.66666666666666" width="179" height="43.333333333333343"/>
                                 <subviews>
@@ -733,6 +728,11 @@ Gjurmim i kalorive</string>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TVa-26-dzd">
+                                <rect key="frame" x="16" y="193" width="358" height="567"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.29803921570000003" green="0.72156862749999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qXI-Fd-xba"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -756,7 +756,86 @@ Gjurmim i kalorive</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dq-vR-sgD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3420" y="-1346"/>
+            <point key="canvasLocation" x="3362" y="-1297"/>
+        </scene>
+        <!--Fitness Plan Days View Controller-->
+        <scene sceneID="hUo-IQ-BHz">
+            <objects>
+                <viewController storyboardIdentifier="FitnessPlanDaysViewController" id="Cjt-yY-uxK" customClass="FitnessPlanDaysViewController" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W0a-gZ-Z0A">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXd-aU-hAh">
+                                <rect key="frame" x="16" y="74" width="358" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XaU-h6-D5r">
+                                <rect key="frame" x="16" y="128" width="358" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pb6-IX-nQq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kXd-aU-hAh" firstAttribute="leading" secondItem="Pb6-IX-nQq" secondAttribute="leading" constant="16" id="22s-vf-G0V"/>
+                            <constraint firstItem="Pb6-IX-nQq" firstAttribute="bottom" secondItem="XaU-h6-D5r" secondAttribute="bottom" constant="16" id="2yd-2E-mkg"/>
+                            <constraint firstItem="kXd-aU-hAh" firstAttribute="top" secondItem="Pb6-IX-nQq" secondAttribute="top" constant="30" id="HnF-ea-Hfo"/>
+                            <constraint firstItem="XaU-h6-D5r" firstAttribute="top" secondItem="kXd-aU-hAh" secondAttribute="bottom" constant="30" id="N8R-62-n6O"/>
+                            <constraint firstItem="Pb6-IX-nQq" firstAttribute="trailing" secondItem="kXd-aU-hAh" secondAttribute="trailing" constant="16" id="ULg-yq-db5"/>
+                            <constraint firstItem="Pb6-IX-nQq" firstAttribute="trailing" secondItem="XaU-h6-D5r" secondAttribute="trailing" constant="16" id="la0-X1-fGj"/>
+                            <constraint firstItem="XaU-h6-D5r" firstAttribute="leading" secondItem="Pb6-IX-nQq" secondAttribute="leading" constant="16" id="vXK-Xf-VN1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="daysTableView" destination="XaU-h6-D5r" id="3sq-qb-C9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEb-gc-0lL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4136" y="-1323"/>
+        </scene>
+        <!--Fitness Day Exercise View Controller-->
+        <scene sceneID="yFz-9f-r10">
+            <objects>
+                <viewController storyboardIdentifier="FitnessDayExerciseViewController" id="WHQ-ei-yPz" customClass="FitnessDayExerciseViewController" customModule="Trajnohu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yfS-fF-gDb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTD-dG-bTk">
+                                <rect key="frame" x="16" y="74" width="358" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xKT-Fa-iyf">
+                                <rect key="frame" x="16" y="128" width="358" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sbr-fM-HwU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sbr-fM-HwU" firstAttribute="bottom" secondItem="xKT-Fa-iyf" secondAttribute="bottom" constant="16" id="5ls-50-VVu"/>
+                            <constraint firstItem="xKT-Fa-iyf" firstAttribute="top" secondItem="YTD-dG-bTk" secondAttribute="bottom" constant="30" id="8qJ-g3-AQf"/>
+                            <constraint firstItem="YTD-dG-bTk" firstAttribute="leading" secondItem="Sbr-fM-HwU" secondAttribute="leading" constant="16" id="N3u-4Q-bnP"/>
+                            <constraint firstItem="xKT-Fa-iyf" firstAttribute="leading" secondItem="Sbr-fM-HwU" secondAttribute="leading" constant="16" id="P9c-8x-8Jg"/>
+                            <constraint firstItem="YTD-dG-bTk" firstAttribute="top" secondItem="Sbr-fM-HwU" secondAttribute="top" constant="30" id="ZbM-g4-nJe"/>
+                            <constraint firstItem="Sbr-fM-HwU" firstAttribute="trailing" secondItem="YTD-dG-bTk" secondAttribute="trailing" constant="16" id="mmb-Vh-9Yj"/>
+                            <constraint firstItem="Sbr-fM-HwU" firstAttribute="trailing" secondItem="xKT-Fa-iyf" secondAttribute="trailing" constant="16" id="okj-L9-Gn0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayLabel" destination="YTD-dG-bTk" id="3Gw-Kn-s4z"/>
+                        <outlet property="dayPlanTableView" destination="xKT-Fa-iyf" id="jBq-Tq-1ho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEm-kX-Vq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4946" y="-1324"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="5Gx-tx-h7j">

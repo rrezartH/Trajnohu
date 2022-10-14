@@ -5,7 +5,7 @@
         <attribute name="day" optional="YES" attributeType="String"/>
         <attribute name="equipment" optional="YES" attributeType="String"/>
         <attribute name="gifUrl" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="target" optional="YES" attributeType="String"/>
     </entity>
